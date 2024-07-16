@@ -177,7 +177,7 @@ main h2 {
 	font-size:2rem;
 }
 .bodyhome{
-  background-image: url("C:/Users/gorde/Desktop/website/img/giphy.webp");  /* Replace with your image path */
+  background-image: url("img/giphy.webp");  /* Replace with your image path */
   background-repeat: no-repeat;  /* Prevent image repetition */
   background-size: cover;  /* Scale image to cover the entire viewport */
   background-position: center;  /* Center the image horizontally and vertically */
