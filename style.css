@@ -47,7 +47,7 @@ a:hover {
 .mainabout{
 	
 	color: white;
-	height: 74vh;
+	height:150vh;
 }
 .mainabout h1 {
 	font-size:5rem;
@@ -57,6 +57,29 @@ a:hover {
 .mainabout h2 {
 	font-size:3rem;
 	font-weight: 350;
+}
+
+.virtualTour{
+  color: black;
+  margin-top:60vh;
+}
+.buttonV{
+  display:block;
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: transparent;  /* Initial background color */
+  color: black;  /* Text color */
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;  /* Rounded corners */
+  cursor: pointer;  /* Indicate clickable button */
+  transition: background-color 0.2s ease-in-out;  /* Transition effect */
+}
+
+.buttonV:hover{
+  background-color: black;  /* Hover color */
+  color:orange;
+  border: 1px solid orange;
 }
 /*tour css*/
 
@@ -73,7 +96,7 @@ a:hover {
 .maincontact {
     font-size:2rem;
 	font-weight: 350;
-	height: 80vh;
+	height: 125vh;
 	
 }
 form{
@@ -166,7 +189,7 @@ textarea:focus{
 
 /*main css*/
 main{
-	height: 150vh;
+	height: 180vh;
 }
 main h1 {
 	font-size:5rem;
@@ -233,7 +256,7 @@ main h2 {
 }
 .servicediv{
 	background-color: orange;
-	height:63.5vh;
+	height:100vh;
 	width:100%;
 	 position: absolute;
   top: 100vh;  /* Adjust position from top of parent */
@@ -250,7 +273,8 @@ main h2 {
     position: auto;
     bottom: 0;
     left: 0;
- 
+    height: 40vh;
+  
 }
 
 .slide-up-text{
@@ -411,10 +435,122 @@ main h2 {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-	<main>
-	
-	
-	nav
-	<h1>
-	nav
-	</main>
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav {
+      text-align: left;
+  }
+
+  li {
+      display: block;
+      margin: 1rem 0;
+      font-size: 1rem;
+  }
+
+  .mainabout {
+      height: auto;
+      padding: 2rem 1rem;
+  }
+
+  .mainabout h1 {
+      font-size: 2.5rem;
+  }
+
+  .mainabout h2 {
+      font-size: 1.5rem;
+  }
+
+  .bodycontact{
+    font-size: 5rem;
+      padding: 1rem;
+      height: 200vh;
+  }
+  .maincontact {
+      font-size: 1.5rem;
+      padding: 1rem;
+     
+  }
+
+  form {
+      margin: 1rem 0.5rem;
+  }
+
+  input[type=text],
+  input[type=email],
+  textarea {
+      width: 90%;
+  }
+
+  input[type=submit],
+  input[type=reset] {
+      margin: 1rem 0.5rem;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+  }
+
+  .form-cont {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .base-image,
+  .overlay-image {
+      width: 90%;
+      height: auto;
+      position: static;
+      margin: 1rem 0;
+  }
+
+  .bodyhome {
+      background-size: cover;
+      height: auto;
+  }
+
+  main {
+      height: auto;
+      padding: 2rem 1rem;
+  }
+
+  main h1 {
+      font-size: 2.5rem;
+  }
+
+  main h2 {
+      font-size: 1.5rem;
+  }
+
+  .button-cont,
+  .button-cont2,
+  .button-cont3 {
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem 0;
+  }
+
+  .button-cont button,
+  .button-cont2 button,
+  .button-cont3 button {
+      margin: 1rem 0;
+      width: 80%;
+  }
+
+  .services {
+      font-size: 1.5rem;
+      padding: 0.5rem 1rem;
+  }
+
+  .servicediv {
+      height: auto;
+      top: auto;
+      left: auto;
+      transform: none;
+      padding: 2rem 1rem;
+  }
+
+  .footer {
+      padding: 1rem;
+  }
+}
